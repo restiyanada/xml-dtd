@@ -18,6 +18,7 @@
 
 <!ELEMENT harga (#PCDATA)>
 <!ATTLIST harga
+xmlns CDATA #FIXED
     cur CDATA #IMPLIED ''>
 
 <!ELEMENT asal (pt,kodewil)>
@@ -26,11 +27,11 @@
 
 <!ELEMENT tujuan (pt,kodewil)>
 <!ATTLIST tujuan
-    xmlns CDATA #FIXED ''>
+    xmlns CDATA #REQUIRED ''>
 
 <!ELEMENT pt (#PCDATA)>
 <!ATTLIST pt
-    xmlns CDATA #FIXED ''>
+    xmlns CDATA #REQUIRED ''>
 
 <!ELEMENT kodewil (#PCDATA)>
 <!ATTLIST kodewil
